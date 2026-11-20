@@ -39,16 +39,16 @@ The page did not show the exact error message, so the test case does not guess i
 
 > **'Add to Favourites' Success for Authenticated Users**: R-2 covers the unauthorized scenario, but there is no positive requirement for successfully adding a product to favourites when a user is logged in. — Fix: add REQ
 
-The gap is reported, not hidden: the requirement set looked complete until the positive path was checked.
+The quality report reviews the requirement set for scenarios that no requirement covers. Here it found that a feature had a requirement only for its negative path.
 
 ## Caught LLM fabrication
 
-An earlier version of the framework produced requirements with thresholds that appeared nowhere in the input:
+In review, requirements from an earlier version of the framework turned out to contain thresholds that appeared nowhere in the input:
 
 > "page loads within 2 seconds"
 > "email confirmation within 5 minutes"
 
-The values looked plausible but had no source on the page, and one had already been copied into a test case assertion. Since then, a value the input does not support is marked as unknown instead of invented, as in T-2 above: *"exact criteria TBD — verify with client"*.
+The values looked plausible but had no source on the page, and one had already been copied into a test case assertion. Generation is now told to mark such values as unknown instead of inventing them; in later runs they appear like the note in T-2 above: *"exact criteria TBD — verify with client"*. This is guidance to the model, not a hard check, so review still matters.
 
 **Reason in one line:** invented value with no source in the input.
 
