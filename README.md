@@ -17,11 +17,13 @@ flowchart LR
     C --> D["QA package + coverage report"]
 ```
 
-**Validation gate:** Every LLM output is checked for completeness and coverage before it enters the package.
+**Validation gate:** LLM output is checked for completeness and coverage before it is delivered. A detected failure is blocked or flagged for review, never passed on silently.
 
 ## What you get
 
 Requirements, test cases, Gherkin scenarios, checklists, a traceability matrix and a quality report.
+
+Delivered as text files and an HTML report, with optional export to Notion.
 
 ## My role
 
@@ -40,7 +42,8 @@ Private, in active development. Live walkthrough on request (screen-share).
 
 ## Contact
 
-TODO(Bogdan): contact details
+- LinkedIn: [linkedin.com/in/bogdan-doroshenko-9a578122](https://www.linkedin.com/in/bogdan-doroshenko-9a578122)
+- Email: bogdan776@gmail.com
 
 ---
 

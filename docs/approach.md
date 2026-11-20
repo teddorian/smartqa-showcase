@@ -12,7 +12,7 @@ The framework changes only after I have reviewed and approved the plan for the c
 
 ## Validation gate
 
-An LLM output that fails validation is rejected and does not enter the package. The final package contains only output that has passed the check.
+LLM output is checked before it is delivered. When a check fails, the output is either blocked, so nothing is built on top of it, or marked as failed inside the artifact, so the reviewer sees the problem instead of discovering it later. Checks catch known failure types; they do not replace human review.
 
 ## Coverage is measured, not declared
 
