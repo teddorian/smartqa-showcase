@@ -43,7 +43,7 @@ Private, in active development. Live walkthrough on request (screen-share).
 ## Contact
 
 - LinkedIn: [linkedin.com/in/bogdan-doroshenko-9a578122](https://www.linkedin.com/in/bogdan-doroshenko-9a578122)
-- Email: bogdan776@gmail.com
+- Email: doroshenko.qa@gmail.com
 
 ---
 
